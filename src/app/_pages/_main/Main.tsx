@@ -7,8 +7,7 @@ import { LuHandshake } from 'react-icons/lu';
 import RegularBtn from '@/components/buttons/RegularBtn';
 import { IoIosAddCircleOutline } from 'react-icons/io';
 
-import bgImg from '@/assets/images/main-bg.jpg';
-import Head from 'next/head';
+import bgImg from '@/assets/images/main-bg.webp';
 
 const ctaBtns: RegularBtnProps[] = [
 
@@ -23,17 +22,13 @@ export default function Main() {
 
     return <React.Fragment>
 
-        <Head>
-            <link
-                rel="preload"
-                as="image"
-                href={bgImg.src}
-            />
-        </Head>
-
         <main className='relative w-full h-[100dvh] pt-34 common-px max-[1020px]:pt-28 bg-lightColor'>
 
-            <Image src={bgImg} alt='main-bg' className='absolute top-0 start-0 w-full h-full object-cover opacity-10 z-0' priority />
+            <Image 
+                src={bgImg} alt='main-bg' 
+                fill placeholder="blur"
+                className='absolute top-0 start-0 w-full h-full object-cover opacity-10 z-0' priority 
+            />
 
             <div className='relative w-full h-full flex flex-col justify-center items-center gap-15 z-10 max-[550px]:gap-10'>
 
