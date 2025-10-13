@@ -14,7 +14,7 @@ export default function NotFound() {
 
             <p className='text-9xl'>⏳</p>
 
-            <h1 className='text-4xl font-bold text-greenColor'>اصبر لسا مشتغلتش</h1>
+            <h1 className='text-4xl text-center font-bold text-greenColor'>اصبر لسا مشتغلتش</h1>
 
             <button onClick={() => router.back()}>
                 <RegularBtn title='إرجــع تـانـي' variants='primary' />
