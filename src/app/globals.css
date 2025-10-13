@@ -3,24 +3,50 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --whiteColor: #ffffff;
+  --lightColor: #e9f5db;
+  --greenColor: #219724;
+  --blackColor: #132a13;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-lightColor: var(--lightColor);
+  --color-greenColor: var(--greenColor);
+  --color-blackColor: var(--blackColor);
+  --color-whiteColor: var(--whiteColor);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 7.5px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 25px;
+  background-color: var(--greenColor);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.common-px{
+  padding-inline: 4.5%; 
+}
+
+.font-quran {
+  font-family: var(--font-scheherazade) !important;
 }
