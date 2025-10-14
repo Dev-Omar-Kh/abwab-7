@@ -1,30 +1,32 @@
-import { useState, useEffect } from 'react';
+"use client";
+import { useState, useLayoutEffect } from "react";
+
+type Pos = { x: number; y: number };
 
 const useScrollPosition = () => {
 
-    const [scroll, setScroll] = useState({
-        x: typeof window !== 'undefined' ? window.scrollX : 0,
-        y: typeof window !== 'undefined' ? window.scrollY : 0,
-    });
+    const [pos, setPos] = useState<Pos>({ x: 0, y: 0 });
 
-    useEffect(() => {
+    useLayoutEffect(() => {
 
-        const handleScroll = () => {
-            setScroll({
-                x: window.scrollX,
-                y: window.scrollY,
-            });
-        };
+        if (typeof window === "undefined") return;
 
-        handleScroll();
+        const getPos = (): Pos => ({
+            x: window.pageXOffset ?? window.scrollX ?? 0,
+            y: window.pageYOffset ?? window.scrollY ?? 0,
+        });
 
-        window.addEventListener('scroll', handleScroll);
+        const onScroll = () => setPos(getPos());
 
-        return () => window.removeEventListener('scroll', handleScroll);
+        setPos(getPos());
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+        return () => window.removeEventListener("scroll", onScroll);
 
     }, []);
 
-    return scroll;
+    return pos;
 
 };
 
