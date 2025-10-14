@@ -22,7 +22,7 @@ export default function Main() {
 
     return <React.Fragment>
 
-        <main className='relative w-full h-[100dvh] pt-34 common-px max-[1020px]:pt-28 bg-lightColor'>
+        <main className='relative w-full h-[100dvh] common-px pt-34 max-[1020px]:pt-28 bg-lightColor'>
 
             <Image 
                 src={bgImg} alt='main-bg' 
@@ -37,7 +37,7 @@ export default function Main() {
                 </QuranText>
 
                 <div className='space-y-10 text-center max-[550px]:space-y-5'>
-                    <h1 className='text-6xl font-bold text-blackColor max-[550px]:text-4xl'>{t('header.headTitle')}</h1>
+                    <h1 className='text-7xl font-bold text-blackColor max-[550px]:text-5xl max-[360px]:text-4xl'>{t('header.headTitle')}</h1>
                     <p className='text-xl font-medium text-blackColor opacity-65 max-[550px]:text-base'>{t('header.slogan')}</p>
                 </div>
 

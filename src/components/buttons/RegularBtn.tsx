@@ -13,7 +13,7 @@ export default function RegularBtn({title, icon: Icon, className, variants}: Reg
                 flex items-center justify-center gap-2.5 rounded-lg px-5 py-2.5 cursor-pointer ${className} 
                 ${variants === 'primary' 
                     ? 'bg-greenColor text-whiteColor' 
-                    : (variants === 'secondary' ? 'bg-whiteColor text-blackColor' : 'bg-whiteColor text-blackColor')
+                    : (variants === 'secondary' ? 'bg-whiteColor text-greenColor' : 'bg-whiteColor text-blackColor')
                 }
             `}
         >
