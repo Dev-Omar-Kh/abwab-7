@@ -13,6 +13,24 @@ export default function Home() {
 
         <Main />
 
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
     </React.Fragment>
 
 }

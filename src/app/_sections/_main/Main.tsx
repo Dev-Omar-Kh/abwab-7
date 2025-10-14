@@ -22,7 +22,7 @@ export default function Main() {
 
     return <React.Fragment>
 
-        <main className='relative w-full h-[100dvh] common-px pt-34 max-[1020px]:pt-28 bg-lightColor'>
+        <main className='relative w-full h-[100dvh] common-px pt-29 max-[1020px]:pt-23 bg-lightColor'>
 
             <Image 
                 src={bgImg} alt='main-bg' 

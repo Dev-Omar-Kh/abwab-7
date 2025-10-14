@@ -10,6 +10,8 @@ import NavLink from '../nav-link/NavLink';
 import { GoHome } from 'react-icons/go';
 
 import logo from "@/assets/images/logo.png";
+import useScreenSize from '@/hooks/useScreenSize';
+import useScrollPosition from '@/hooks/useScrollPosition';
 
 
 const linksData: LinksData[] = [
@@ -26,19 +28,23 @@ const linksData: LinksData[] = [
 export default function Header() {
 
     const {t} = useTranslation();
+    const { width } = useScreenSize();
+    const { y: scrollY } = useScrollPosition();
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(prev => !prev);
+        if(width <= 1019){
+            setIsMenuOpen(prev => !prev);
+        }
     }
 
     return <React.Fragment>
 
         <header 
             className={`
-                fixed top-0 start-0 w-full py-5 common-px flex flex-wrap items-center justify-between gap-5 z-50
-                ${isMenuOpen ? 'bg-whiteColor' : ''} duration-300
+                fixed top-0 start-0 w-full py-2.5 common-px flex flex-wrap items-center justify-between gap-5 z-50
+                ${isMenuOpen || scrollY > 50 ? 'bg-whiteColor' : ''} duration-150
             `}
         >
 
@@ -49,10 +55,11 @@ export default function Header() {
             <nav 
                 className={`
                     max-[1020px]:fixed max-[1020px]:opacity-0 max-[1020px]:bottom-0 max-[1020px]:bg-whiteColor
-                    max-[1020px]:top-27.5 max-[1020px]:left-0 max-[1020px]:right-0 max-[1020px]:!w-[100vw] 
+                    max-[1020px]:top-22.5 max-[1020px]:left-0 max-[1020px]:right-0 max-[1020px]:!w-[100vw] 
                     max-[1020px]:-translate-y-2.5 duration-300 max-[1020px]:z-40 max-[1020px]:invisible
                     ${isMenuOpen ? 'max-[1020px]:translate-y-0 max-[1020px]:opacity-100 max-[1020px]:visible' : ''}
                 `}
+                onClick={toggleMenu}
             >
 
                 <ul 
