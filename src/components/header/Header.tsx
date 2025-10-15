@@ -12,6 +12,7 @@ import { GoHome } from 'react-icons/go';
 import logo from "@/assets/images/logo.png";
 import useScreenSize from '@/hooks/useScreenSize';
 import useScrollPosition from '@/hooks/useScrollPosition';
+import BurgerBtn from './BurgerBtn';
 
 
 const linksData: LinksData[] = [
@@ -95,26 +96,7 @@ export default function Header() {
                 className="hidden flex-col items-center justify-center gap-1.5 p-2 max-[1020px]:flex max-[1020px]:w-fit opacity-70"
                 aria-label="Toggle menu"
             >
-                <span
-                    className={`
-                        w-8 h-1 rounded-full transition-all duration-300 bg-blackColor
-                        ${isMenuOpen ? 'rotate-45 translate-y-[10px]' : ''}
-                    `}
-                />
-
-                <span
-                    className={`
-                        w-8 h-1 rounded-full transition-all duration-300 bg-blackColor
-                        ${isMenuOpen ? 'opacity-0' : 'opacity-100'}
-                    `}
-                />
-
-                <span
-                    className={`
-                        w-8 h-1 rounded-full transition-all duration-300 bg-blackColor
-                        ${isMenuOpen ? '-rotate-45 -translate-y-[10px]' : ''}
-                    `}
-                />
+                <BurgerBtn isMenuOpen={isMenuOpen} />
             </button>
 
         </header>
