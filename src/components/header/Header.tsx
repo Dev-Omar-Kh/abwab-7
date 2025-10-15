@@ -44,7 +44,7 @@ export default function Header() {
         <header 
             className={`
                 fixed top-0 start-0 w-full py-2.5 common-px flex flex-wrap items-center justify-between gap-5 z-50
-                ${isMenuOpen || scrollY > 50 ? 'bg-whiteColor' : ''} duration-150 backdrop-blur-xs
+                ${isMenuOpen || scrollY > 50 ? 'bg-whiteColor' : 'backdrop-blur-xs'} duration-150
             `}
         >
 
