@@ -38,7 +38,7 @@ export default function Main() {
 
                 <div className='space-y-10 text-center max-[550px]:space-y-5'>
                     <h1 className='text-7xl font-bold text-blackColor max-[550px]:text-5xl max-[360px]:text-4xl'>{t('header.headTitle')}</h1>
-                    <p className='text-xl font-medium text-blackColor opacity-65 max-[550px]:text-base'>{t('header.slogan')}</p>
+                    <p className='w-2xl text-xl font-medium text-blackColor opacity-65 max-[550px]:text-base max-[720px]:w-full'>{t('header.slogan')}</p>
                 </div>
 
                 <div 
