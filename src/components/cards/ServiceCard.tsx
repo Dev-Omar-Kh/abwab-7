@@ -36,7 +36,7 @@ export default function ServiceCard({className, style, setCardHeight, title, bgI
             style={{height: width, ...style}}
         >
 
-            <div className='absolute w-full h-full top-0 left-0 bottom-0 right-0 opacity-15 z-10'>
+            <div className='absolute w-full h-full top-0 left-0 bottom-0 right-0 opacity-10 z-10'>
                 <Image src={bgImage} alt='service image' className='w-full h-full object-cover' />
             </div>
 
