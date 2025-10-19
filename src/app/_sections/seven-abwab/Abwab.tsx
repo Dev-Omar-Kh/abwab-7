@@ -2,16 +2,78 @@ import React, { useState } from 'react';
 import MainSubTitle from '@/components/texts/MainSubTitle';
 import MainTitle from '@/components/texts/MainTitle';
 import ServiceCard from '@/components/cards/ServiceCard';
-import { useElementWidth } from '@/hooks/useElementWidth';
 import useScreenSize from '@/hooks/useScreenSize';
+import type { StaticImageData } from 'next/image';
+
+import kafalatAytam from '@/assets/images/kafalat-aytam.jpg';
+import soqya from '@/assets/images/soqya-almaa.jpeg';
+import masaged from '@/assets/images/benaa-al-masajed.jpg';
+import etaam from '@/assets/images/etaam-foqaraa.jpg';
+
+type AlAbwabDataTypes = {
+    id: number;
+    img: StaticImageData;
+    title: string;
+    className?: string;
+}
+
+const alAbwabData: AlAbwabDataTypes[] = [
+
+    {
+        id: 0,
+        img: kafalatAytam,
+        title: 'abwab.services.kafalah',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+    },
+
+    {
+        id: 1,
+        img: soqya,
+        title: 'abwab.services.soqya',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+    },
+
+    {
+        id: 2,
+        img: masaged,
+        title: 'abwab.services.benaa',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+    },
+
+    {
+        id: 3,
+        img: etaam,
+        title: 'abwab.services.etaam',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+    },
+
+    {
+        id: 4,
+        img: kafalatAytam,
+        title: 'abwab.services.tepaa',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%]',
+    },
+
+    {
+        id: 5,
+        img: kafalatAytam,
+        title: 'abwab.services.kafalatOlamaa',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%]',
+    },
+
+    {
+        id: 6,
+        img: kafalatAytam,
+        title: 'abwab.services.kafalahDoorTahfez',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%]',
+    },
+
+]
 
 export default function Abwab() {
 
     const {width: screenW} = useScreenSize();
-    const { ref, width } = useElementWidth();
     const [cardHeight, setCardHeight] = useState(0)
-
-    console.log('(width/4) - (20 - (20/4))', (width/4) - (20 - (20/4)))
 
     return <React.Fragment>
 
@@ -24,16 +86,14 @@ export default function Abwab() {
 
             <div 
                 className='flex justify-center gap-x-5 flex-wrap' 
-                ref={ref} style={{height: screenW > 899 ? cardHeight * 1.8 : cardHeight * 5.86 }}
+                style={{height: screenW > 899 ? cardHeight * 1.8 : cardHeight * 5.86 }}
             >
 
-                <ServiceCard setCardHeight={setCardHeight} className='max-[900px]:!w-2/3 max-[900px]:-translate-x-1/4' />
-                <ServiceCard setCardHeight={setCardHeight} className='max-[900px]:!w-2/3 max-[900px]:translate-x-1/4 max-[900px]:-translate-y-[19%]' />
-                <ServiceCard setCardHeight={setCardHeight} className='max-[900px]:!w-2/3 max-[900px]:-translate-x-1/4 max-[900px]:-translate-y-[38%]' />
-                <ServiceCard setCardHeight={setCardHeight} className='max-[900px]:!w-2/3 max-[900px]:translate-x-1/4 max-[900px]:-translate-y-[57%]' />
-                <ServiceCard setCardHeight={setCardHeight} className='translate-y-[-20%] max-[900px]:!w-2/3 max-[900px]:-translate-x-1/4 max-[900px]:-translate-y-[76%]' />
-                <ServiceCard setCardHeight={setCardHeight} className='translate-y-[-20%] max-[900px]:-translate-y-[95%] max-[900px]:translate-x-1/4 max-[900px]:!w-2/3' />
-                <ServiceCard setCardHeight={setCardHeight} className='translate-y-[-20%] max-[900px]:-translate-y-[114%] max-[900px]:!w-2/3 max-[900px]:-translate-x-1/4' />
+                {alAbwabData.map(card => <ServiceCard 
+                    key={card.id} 
+                    setCardHeight={setCardHeight} title={card.title} bgImage={card.img}
+                    className={`${card.className} max-[900px]:-translate-y-[${19 * card.id}%]`} 
+                />)}
 
             </div>
 
