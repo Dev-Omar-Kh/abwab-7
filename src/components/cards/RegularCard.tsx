@@ -8,7 +8,7 @@ export default function RegularCard({icon: Icon, title, description, className}:
 
     return <React.Fragment>
 
-        <div className={`p-5 flex flex-col items-center justify-center gap-5 rounded-lg bg-lightColor/85 shadow-md ${className}`}>
+        <div className={`p-5 flex flex-col items-center justify-center gap-5 rounded-lg bg-lightColor/85 ${className}`}>
 
             <div className='w-24 h-24 flex items-center justify-center rounded-full bg-whiteColor border-2 border-greenColor'>
                 <Icon className='text-6xl text-greenColor' />

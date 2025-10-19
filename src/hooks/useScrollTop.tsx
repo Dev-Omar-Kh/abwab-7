@@ -1,8 +1,10 @@
 "use client";
-import { useEffect } from "react";
+
+import { useCallback } from "react";
 
 export function useScrollTop() {
-    useEffect(() => {
+    return useCallback(() => {
+        if (typeof window === "undefined") return;
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, []);
 }

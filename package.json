@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "framer-motion": "^12.23.24",
     "i18next": "^25.6.0",
     "next": "15.5.4",
     "next-active-link": "^1.1.4",

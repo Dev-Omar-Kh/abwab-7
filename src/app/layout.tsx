@@ -3,6 +3,7 @@ import "./globals.css";
 import React from "react";
 import Direction from "../components/dir/Direction";
 import { Cairo } from "next/font/google";
+import ScrollBtn from "@/components/buttons/ScrollBtn";
 
 const cairo = Cairo({
     subsets: ["latin", "arabic"],
@@ -25,6 +26,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
 
                 <Direction />
                 {children}
+                <ScrollBtn />
 
             </body>
 

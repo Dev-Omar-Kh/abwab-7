@@ -23,8 +23,8 @@ export default function Mission() {
         <section className='py-10 common-px space-y-10'>
 
             <div className='w-full flex flex-col items-center justify-center gap-7.5'>
-                <MainTitle title='رسالتنا' />
-                <MainSubTitle subTitle="مشروع الأبواب السبعة للصدقة الجارية — مشروع العمر الذي يجمع بين الأجر المستمر وأثر الخير الباقي. خير ساقه الله إليك، فلا تحرم نفسك المشاركة." />
+                <MainTitle title='mission.title' />
+                <MainSubTitle subTitle="mission.slogan" />
             </div>
 
             <div className='grid grid-cols-3 gap-5 max-[1020px]:grid-cols-2 max-[675px]:grid-cols-1'>
