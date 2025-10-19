@@ -51,3 +51,8 @@ body {
 .font-quran {
   font-family: var(--font-scheherazade) !important;
 }
+
+.hexa-card{
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: calc((100% / 4) - (20px - (20px /4)));
+}
