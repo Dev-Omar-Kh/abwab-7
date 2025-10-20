@@ -9,6 +9,11 @@ import kafalatAytam from '@/assets/images/kafalat-aytam.jpg';
 import soqya from '@/assets/images/soqya-almaa.jpeg';
 import masaged from '@/assets/images/benaa-al-masajed.jpg';
 import etaam from '@/assets/images/etaam-foqaraa.jpg';
+import tepaa from '@/assets/images/tepaa-masahef.jpg';
+import tolaap from '@/assets/images/kafalat-tolap.jpg';
+import tahfez from '@/assets/images/door-tahfez.jpg';
+
+
 
 type AlAbwabDataTypes = {
     id: number;
@@ -49,21 +54,21 @@ const alAbwabData: AlAbwabDataTypes[] = [
 
     {
         id: 4,
-        img: kafalatAytam,
+        img: tepaa,
         title: 'abwab.services.tepaa',
         className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%] max-[900px]:-translate-y-[76%]',
     },
 
     {
         id: 5,
-        img: kafalatAytam,
+        img: tolaap,
         title: 'abwab.services.kafalatOlamaa',
         className: `max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%] max-[900px]:-translate-y-[95%]`,
     },
 
     {
         id: 6,
-        img: kafalatAytam,
+        img: tahfez,
         title: 'abwab.services.kafalahDoorTahfez',
         className: `
             max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 
@@ -83,7 +88,7 @@ export default function Abwab() {
         <section className='common-px space-y-10'>
 
             <div className='w-full flex flex-col items-center justify-center gap-7.5'>
-                <MainTitle title='abwab.title' />
+                <MainTitle title='abwab.title' miniBottom={false} />
                 <MainSubTitle subTitle="abwab.slogan" />
             </div>
 
