@@ -6,6 +6,7 @@ import Header from "@/components/header/Header";
 import Main from "./_sections/_main/Main";
 import Mission from "./_sections/mission/Mission";
 import Abwab from "./_sections/seven-abwab/Abwab";
+import MonthlyStocks from "./_sections/stocks/MonthlyStocks";
 // import { useScrollTop } from "@/hooks/useScrollTop";
 
 export default function Home() {
@@ -14,15 +15,21 @@ export default function Home() {
 
     return<React.Fragment>
 
-        <Header />
+        <section className='space-y-20'>
 
-        <Main />
+            <Header />
 
-        <Mission />
+            <Main />
 
-        <Abwab />
+            <Mission />
 
-        {/* <br /> */}
+            <Abwab />
+
+            <MonthlyStocks />
+
+            {/* <br /> */}
+
+        </section>
 
     </React.Fragment>
 

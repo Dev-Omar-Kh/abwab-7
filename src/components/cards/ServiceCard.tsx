@@ -37,12 +37,12 @@ export default function ServiceCard({className, style, setCardHeight, title, bgI
         >
 
             <div className='absolute w-full h-full top-0 left-0 bottom-0 right-0 opacity-10 z-10'>
-                <Image src={bgImage} alt='service image' className='w-full h-full object-cover' />
+                <Image src={bgImage} alt='service image' className='w-full h-full object-cover' priority />
             </div>
 
             <div className='absolute w-full h-full top-0 left-0 bottom-0 right-0 z-0 bg-lightColor'></div>
             <div className='relative w-full h-full flex items-center justify-center  z-20'>
-                <h3 className='text-center text-3xl font-bold text-blackColor max-[460px]:text-2xl'>{t(title)}</h3>
+                <h3 className='text-center text-3xl font-bold text-greenColor text-shadow-2xs max-[460px]:text-2xl'>{t(title)}</h3>
             </div>
 
         </div>

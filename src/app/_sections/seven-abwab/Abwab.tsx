@@ -30,42 +30,45 @@ const alAbwabData: AlAbwabDataTypes[] = [
         id: 1,
         img: soqya,
         title: 'abwab.services.soqya',
-        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 max-[900px]:-translate-y-[19%]',
     },
 
     {
         id: 2,
         img: masaged,
         title: 'abwab.services.benaa',
-        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 max-[900px]:-translate-y-[38%]',
     },
 
     {
         id: 3,
         img: etaam,
         title: 'abwab.services.etaam',
-        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 max-[900px]:-translate-y-[57%]',
     },
 
     {
         id: 4,
         img: kafalatAytam,
         title: 'abwab.services.tepaa',
-        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%]',
+        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%] max-[900px]:-translate-y-[76%]',
     },
 
     {
         id: 5,
         img: kafalatAytam,
         title: 'abwab.services.kafalatOlamaa',
-        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%]',
+        className: `max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%] max-[900px]:-translate-y-[95%]`,
     },
 
     {
         id: 6,
         img: kafalatAytam,
         title: 'abwab.services.kafalahDoorTahfez',
-        className: 'max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 translate-y-[-20%]',
+        className: `
+            max-[900px]:!w-2/3 max-[900px]:even:translate-x-1/4 max-[900px]:odd:-translate-x-1/4 
+            translate-y-[-20%] max-[900px]:-translate-y-[114%]
+        `,
     },
 
 ]
@@ -77,7 +80,7 @@ export default function Abwab() {
 
     return <React.Fragment>
 
-        <section className='py-10 common-px space-y-10'>
+        <section className='common-px space-y-10'>
 
             <div className='w-full flex flex-col items-center justify-center gap-7.5'>
                 <MainTitle title='abwab.title' />
@@ -92,7 +95,7 @@ export default function Abwab() {
                 {alAbwabData.map(card => <ServiceCard 
                     key={card.id} 
                     setCardHeight={setCardHeight} title={card.title} bgImage={card.img}
-                    className={`${card.className} max-[900px]:-translate-y-[${19 * card.id}%]`} 
+                    className={`${card.className}`} 
                 />)}
 
             </div>

@@ -20,7 +20,7 @@ export default function Mission() {
 
     return <React.Fragment>
 
-        <section className='py-10 common-px space-y-10'>
+        <section className='common-px space-y-10'>
 
             <div className='w-full flex flex-col items-center justify-center gap-7.5'>
                 <MainTitle title='mission.title' />
