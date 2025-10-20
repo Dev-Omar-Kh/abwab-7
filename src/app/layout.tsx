@@ -14,6 +14,7 @@ const cairo = Cairo({
 export const metadata: Metadata = {
     title: "الأبواب السبعة",
     description: "مشروع الأبواب السبعة للصدقة الجارية — مشروع العمر الذي يجمع بين الأجر المستمر وأثر الخير الباقي. خير ساقه الله إليك، فلا تحرم نفسك المشاركة.",
+    keywords: "الصدقة الجارية, الأبواب السبعة, مشروع خيري, صدقة, أجر مستمر, تبرع, ابواب الخير"
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
