@@ -2,6 +2,7 @@ import { useLocalizedNumber } from '@/hooks/useLocalizedNumber';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import RegularBtn from '../buttons/RegularBtn';
+import NumbersText from '../texts/NumbersText';
 
 type StockCardProps = {
     price: number;
@@ -10,8 +11,6 @@ type StockCardProps = {
 }
 
 export default function StockCard({price, currency}: StockCardProps) {
-
-    const { formatNumber: formatAr } = useLocalizedNumber("ar");
 
     const { t } = useTranslation();
 
@@ -22,7 +21,7 @@ export default function StockCard({price, currency}: StockCardProps) {
             {/* <div className='absolute top-5 end-5 w-3.5 h-3.5 rounded-full bg-blackColor shadow-2xs' style={{backgroundColor: stockColor}}></div> */}
 
             <div className='flex flex-col items-center justify-center gap-2.5'>
-                <p className="text-5xl font-extrabold text-blackColor">{formatAr(price)}</p>
+                <p className="text-5xl font-extrabold text-blackColor">{<NumbersText lang='ar' number={price} />}</p>
                 <p className='text-blackColor opacity-65'><span className='font-medium'>{t(currency)}</span> / {t('stocks.monthly')}</p>
             </div>
 

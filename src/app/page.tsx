@@ -3,19 +3,17 @@
 import "../../i18n";
 import React from "react";
 import Header from "@/components/header/Header";
-import Main from "./_sections/_main/Main";
-import Mission from "./_sections/mission/Mission";
-import Abwab from "./_sections/seven-abwab/Abwab";
-import MonthlyStocks from "./_sections/stocks/MonthlyStocks";
+import Main from "./_home-sections/_main/Main";
+import Mission from "./_home-sections/mission/Mission";
+import Abwab from "./_home-sections/seven-abwab/Abwab";
+import MonthlyStocks from "./_home-sections/stocks/MonthlyStocks";
 // import { useScrollTop } from "@/hooks/useScrollTop";
 
 export default function Home() {
 
-    // useScrollTop();
-
     return<React.Fragment>
 
-        <section className='space-y-20'>
+        <section className='flex flex-col gap-20'>
 
             <Header />
 
@@ -26,8 +24,6 @@ export default function Home() {
             <Abwab />
 
             <MonthlyStocks />
-
-            {/* <br /> */}
 
         </section>
 
