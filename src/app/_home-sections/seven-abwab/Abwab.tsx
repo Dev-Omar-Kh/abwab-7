@@ -13,8 +13,6 @@ import tepaa from '@/assets/images/tepaa-masahef.jpg';
 import tolaap from '@/assets/images/kafalat-tolap.jpg';
 import tahfez from '@/assets/images/door-tahfez.jpg';
 
-
-
 type AlAbwabDataTypes = {
     id: number;
     img: StaticImageData;

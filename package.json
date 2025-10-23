@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build --turbopack",
     "dev": "next dev --turbopack",
-    "postbuild": "next-sitemap",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",

@@ -7,6 +7,7 @@ import Main from "./_home-sections/_main/Main";
 import Mission from "./_home-sections/mission/Mission";
 import Abwab from "./_home-sections/seven-abwab/Abwab";
 import MonthlyStocks from "./_home-sections/stocks/MonthlyStocks";
+import MoreAbwab from "./_home-sections/more-abwab/MoreAbwab";
 // import { useScrollTop } from "@/hooks/useScrollTop";
 
 export default function Home() {
@@ -24,6 +25,8 @@ export default function Home() {
             <Abwab />
 
             <MonthlyStocks />
+
+            <MoreAbwab />
 
         </section>
 
