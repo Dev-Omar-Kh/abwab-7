@@ -1,4 +1,3 @@
-import { useLocalizedNumber } from '@/hooks/useLocalizedNumber';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import RegularBtn from '../buttons/RegularBtn';
@@ -8,15 +7,16 @@ type StockCardProps = {
     price: number;
     currency: string;
     stockColor: string;
+    className?: string;
 }
 
-export default function StockCard({price, currency}: StockCardProps) {
+export default function StockCard({price, currency, className}: StockCardProps) {
 
     const { t } = useTranslation();
 
     return <React.Fragment>
 
-        <div className='relative p-5 space-y-5 rounded-lg bg-lightColor'>
+        <div className={`relative p-5 space-y-5 rounded-lg bg-lightColor ${className}`}>
 
             {/* <div className='absolute top-5 end-5 w-3.5 h-3.5 rounded-full bg-blackColor shadow-2xs' style={{backgroundColor: stockColor}}></div> */}
 

@@ -63,3 +63,25 @@ body {
     repeating-linear-gradient(-45deg, transparent, transparent 35px, var(--lightColor) 35px, var(--lightColor) 70px)
   ;
 }
+
+.stock-card-width{
+  width: calc((100% / 4) - (20px - (20px /4)));
+}
+
+@media only screen and (max-width: 1030px) {
+  .stock-card-width{
+    width: calc((100% / 3) - (20px - (20px /3)));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .stock-card-width{
+    width: calc((100% / 2) - (20px - (20px /2)));
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .stock-card-width{
+    width: calc((100% / 1) - (20px - (20px /1)));
+  }
+}

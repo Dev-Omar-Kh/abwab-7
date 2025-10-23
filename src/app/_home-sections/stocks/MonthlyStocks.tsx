@@ -30,9 +30,14 @@ export default function MonthlyStocks() {
                     <MainTitle title={t('stocks.title')} textColor='var(--whiteColor)' lineColor='var(--whiteColor)' miniBottom={false}  />
                 </div>
 
-                <div className='grid grid-cols-4 gap-5 max-[1030px]:grid-cols-3 max-[800px]:grid-cols-2 max-[510px]:grid-cols-1'>
+                {/* <div className='grid grid-cols-4 gap-5 max-[1030px]:grid-cols-3 max-[800px]:grid-cols-2 max-[510px]:grid-cols-1'> */}
+                <div className='flex flex-wrap items-center justify-center gap-5'>
 
-                    {shares.map(stock => <StockCard key={stock.id} price={stock.price} currency={stock.currency}stockColor={stock.stockColor} />)}
+                    {shares.map(stock => <StockCard 
+                        key={stock.id} price={stock.price} 
+                        currency={stock.currency}stockColor={stock.stockColor}
+                        className='stock-card-width' 
+                    />)}
 
                 </div>
 
