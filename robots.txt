@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abwab-7.vercel.app/sitemap.xml

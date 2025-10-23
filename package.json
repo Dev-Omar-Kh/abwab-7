@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "dev": "next dev --turbopack",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,6 +15,7 @@
     "next": "15.5.4",
     "next-active-link": "^1.1.4",
     "next-i18next": "^15.4.2",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-i18next": "^16.0.0",
