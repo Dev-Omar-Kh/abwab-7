@@ -38,7 +38,7 @@ export default function CallToAction() {
                 <div 
                     className='
                         w-full flex items-center justify-center gap-5 max-[430px]:gap-2.5 
-                        max-[430px]:grid max-[430px]:grid-cols-2 max-[370px]:grid-cols-1
+                        max-[500px]:grid max-[500px]:grid-cols-2 max-[425px]:grid-cols-1
                     '
                 >
 
