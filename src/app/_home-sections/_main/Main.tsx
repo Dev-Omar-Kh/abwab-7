@@ -3,18 +3,15 @@ import Image from 'next/image';
 import QuranText from '@/components/texts/QuranText';
 import { useTranslation } from 'react-i18next';
 import { RegularBtnProps } from '@/types/buttons';
-import { LuHandshake } from 'react-icons/lu';
+import { LuHandshake, LuHeadset } from 'react-icons/lu';
 import RegularBtn from '@/components/buttons/RegularBtn';
-import { IoIosAddCircleOutline } from 'react-icons/io';
 
 import bgImg from '@/assets/images/main-bg.webp';
 
 const ctaBtns: RegularBtnProps[] = [
-
-    {id: 1, icon: IoIosAddCircleOutline, title: 'header.cta.learnMore', variants: 'secondary'},
-    {id: 2, icon: LuHandshake, title: 'header.cta.contribute', variants: 'primary'},
-
-]
+    {id: 1, icon: LuHandshake, title: 'header.cta.contribute', variants: 'primary'},
+    {id: 2, icon: LuHeadset, title: 'header.cta.contactUs', variants: 'secondary'},
+];
 
 export default function Main() {
 
@@ -32,8 +29,8 @@ export default function Main() {
 
             <div className='relative w-full h-full flex flex-col justify-center items-center gap-15 z-10 max-[550px]:gap-10'>
 
-                <QuranText className='text-3xl text-greenColor font-medium text-center max-[550px]:text-xl'>
-                    {t('header.quran')}
+                <QuranText className='text-3xl/relaxed text-greenColor font-medium text-center max-[550px]:text-xl/relaxed'>
+                    ﴿ {t('header.quran')} ﴾
                 </QuranText>
 
                 <div className='space-y-10 text-center max-[550px]:space-y-5'>

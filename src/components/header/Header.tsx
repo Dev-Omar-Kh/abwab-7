@@ -8,11 +8,11 @@ import { LuClipboardList, LuHandHeart, LuHeadset } from 'react-icons/lu';
 import { LinksData } from '@/types/header';
 import NavLink from '../nav-link/NavLink';
 import { GoHome } from 'react-icons/go';
-
-import logo from "@/assets/images/logo.png";
 import useScreenSize from '@/hooks/useScreenSize';
 import useScrollPosition from '@/hooks/useScrollPosition';
 import BurgerBtn from './BurgerBtn';
+
+import logo from "@/assets/images/logo.png";
 
 
 const linksData: LinksData[] = [
