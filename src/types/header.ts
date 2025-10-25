@@ -2,7 +2,7 @@ import type { IconType } from "react-icons";
 
 export type LinksData = {
     id: number;
-    icon: IconType;
+    icon?: IconType;
     title: string;
     href: string;
 }

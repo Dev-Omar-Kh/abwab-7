@@ -80,7 +80,7 @@ export default function Header() {
                                 max-[1020px]:w-full
                             '
                         >
-                            <link.icon className='text-xl' />
+                            {link.icon && <link.icon className='text-xl' />}
                             <p className='text-base font-medium'>{t(link.title)}</p>
                         </NavLink>
                     </li>)}

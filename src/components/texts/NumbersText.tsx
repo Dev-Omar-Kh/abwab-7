@@ -12,16 +12,17 @@ type NumbersTextProps = {
     number: number;
     lang: 'ar' | 'en';
     className?: string;
+    withSeparator?: boolean
 };
 
-export default function NumbersText({lang, number, className}: NumbersTextProps) {
+export default function NumbersText({lang, number, className, withSeparator = true}: NumbersTextProps) {
 
     const { formatNumber } = useLocalizedNumber(lang);
 
     return <React.Fragment>
 
         <span className={`${tajawal.className} ${className}`}>
-            {formatNumber(number)}
+            {formatNumber(number, withSeparator)}
         </span>
 
     </React.Fragment>
