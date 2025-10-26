@@ -48,10 +48,10 @@ export default function CallToAction() {
 
                 </div>
 
-                <div className='px-2.5 py-1.5 bg-blackColor/5 rounded-full flex items-center gap-2.5'>
+                <div className='px-5 py-1 bg-blackColor/5 rounded-full flex items-center gap-2.5'>
                     <GoDotFill className='text-greenColor shrink-0' />
-                    <p className='text-sm text-blackColor'>
-                        <NumbersText lang='ar' number={100} className='!text-lg' />% {t('callToAction.note')}
+                    <p className='text-sm text-blackColor max-[540px]:text-xs'>
+                        <NumbersText lang='ar' number={100} className='!text-lg max-[540px]:text-base' />% {t('callToAction.note')}
                     </p>
                 </div>
 
