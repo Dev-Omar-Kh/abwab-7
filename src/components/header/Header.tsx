@@ -18,7 +18,7 @@ import logo from "@/assets/images/logo.png";
 const linksData: LinksData[] = [
 
     {id: 1, icon: GoHome, title: 'header.links.home', href: '/'},
-    {id: 2, icon: BiBrain, title: 'header.links.idea', href: '/idea'},
+    {id: 2, icon: BiBrain, title: 'header.links.idea', href: '/about-us'},
     {id: 3, icon: MdOutlineOndemandVideo, title: 'header.links.videos', href: '/videos'},
     {id: 4, icon: LuHandHeart, title: 'header.links.recommendations', href: '/recommendations'},
     {id: 5, icon: LuClipboardList, title: 'header.links.reports', href: '/reports'},
@@ -45,7 +45,7 @@ export default function Header() {
         <header 
             className={`
                 fixed top-0 start-0 w-full py-2.5 common-px flex flex-wrap items-center justify-between gap-5 z-50
-                ${isMenuOpen || scrollY > 50 ? 'bg-whiteColor' : ''} duration-150
+                ${isMenuOpen || scrollY > 10 ? 'bg-whiteColor' : ''} duration-150
             `}
         >
 

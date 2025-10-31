@@ -13,7 +13,7 @@ import { FaYoutube } from "react-icons/fa6";
 import { RiTelegram2Fill } from "react-icons/ri";
 
 const linksData: LinksData[] = [
-    {id: 2, title: 'header.links.idea', href: '/idea'},
+    {id: 2, title: 'header.links.idea', href: '/about-us'},
     {id: 3, title: 'header.links.videos', href: '/videos'},
     {id: 4, title: 'header.links.recommendations', href: '/recommendations'},
     {id: 5, title: 'header.links.reports', href: '/reports'},

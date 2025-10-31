@@ -22,9 +22,9 @@ export default function MonthlyStocks() {
 
     return <React.Fragment>
 
-        <section className='pattern-bg w-full'>
+        <section className='relative pattern-bg w-full shapedividers_com-282 shapedividers_com-9979'>
 
-            <div className='w-full py-10 common-px !space-y-10 bg-greenColor/75'>
+            <div className='w-full py-20 common-px !space-y-10 bg-greenColor/75'>
 
                 <div className='m-auto w-fit !mb-20'>
                     <MainTitle title={t('stocks.title')} textColor='var(--whiteColor)' lineColor='var(--whiteColor)' miniBottom={false}  />
