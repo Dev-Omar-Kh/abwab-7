@@ -26,17 +26,17 @@ export default function ProjectIdea() {
                 {/* <MainSubTitle subTitle="mission.slogan" /> */}
             </div>
 
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='grid grid-cols-2 gap-5 max-[1070px]:grid-cols-1'>
 
-                <div className='space-y-5'>
+                <div className='space-y-5 max-[1070px]:order-2'>
 
                     {projectIdeaData.map(idea => <div key={idea.id} className='space-y-1.5'>
 
-                        <h3 className='text-2xl font-semibold text-greenColor'>{t(idea.title)}</h3>
+                        <h3 className='text-2xl font-semibold text-greenColor max-[650px]:text-xl'>{t(idea.title)}</h3>
 
                         <div className='space-x-2.5'>
-                            <IoMdCheckmarkCircleOutline className='shrink-0 inline-block text-xl text-greenColor' />
-                            <span className='text-lg text-blackColor'>{t(idea.desc)}</span>
+                            <IoMdCheckmarkCircleOutline className='shrink-0 inline-block text-xl text-greenColor max-[650px]:text-lg' />
+                            <span className='text-lg text-blackColor max-[650px]:text-base'>{t(idea.desc)}</span>
                         </div>
 
                     </div>)}
