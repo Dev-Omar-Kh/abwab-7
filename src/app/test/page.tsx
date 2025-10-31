@@ -88,7 +88,7 @@ export default function ProjectIdeaPage() {
             <ul className="space-y-2 list-disc list-inside text-gray-700">
               <li>إقامة المشاريع الصغيرة للأرامل والمحتاجين</li>
               <li>منح الزواج للشباب والفتيات الفقراء</li>
-              <li>مشروع "إتعلم حرفة" لتمكين الفقراء</li>
+              <li>{`مشروع "إتعلم حرفة" لتمكين الفقراء`}</li>
             </ul>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function ProjectIdeaPage() {
         <p className="max-w-3xl mx-auto text-lg leading-relaxed mb-8">
           ساهم معنا في بناء مستقبل أفضل للمسلمين حول العالم، واجعل لك صدقة جارية تظل تنفعك بعد مماتك.
         </p>
-        <p className="text-green-700 font-semibold">"خير الناس أنفعهم للناس"</p>
+        <p className="text-green-700 font-semibold">{`"خير الناس أنفعهم للناس"`}</p>
       </section>
     </main>
   );
