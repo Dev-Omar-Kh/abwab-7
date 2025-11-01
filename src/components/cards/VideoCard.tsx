@@ -12,7 +12,7 @@ export default function VideoCard({src, className}: VideoCardProps) {
 
     return <React.Fragment>
 
-        <div className={`w-full rounded-xl aspect-video overflow-hidden ${className}`}>
+        <div className={`w-full rounded-xl aspect-video overflow-hidden bg-blackColor/30 ${className}`}>
             <ReactPlayer
                 src={src} controls={true} width={'100%'} height={'100%'}
                 className={`rounded-xl overflow-hidden shrink-0 h-auto`}

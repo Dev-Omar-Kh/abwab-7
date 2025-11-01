@@ -6,6 +6,7 @@ import { LuClipboardList, LuHandshake } from 'react-icons/lu';
 import RegularBtn from '@/components/buttons/RegularBtn';
 import { GoDotFill } from 'react-icons/go';
 import NumbersText from '@/components/texts/NumbersText';
+import ListText from '@/components/texts/ListText';
 
 const ctaBtns: RegularBtnProps[] = [
     {id: 1, icon: LuHandshake, title: 'callToAction.cta.contribute', variants: 'primary'},
@@ -55,12 +56,17 @@ export default function CallToAction() {
                     </p>
                 </div> */}
 
-                <div className='space-x-2.5 px-5 py-1 bg-blackColor/5 rounded-full'>
+                {/* <div className='space-x-2.5 px-5 py-1 bg-blackColor/5 rounded-full'>
                     <GoDotFill className='shrink-0 inline-block text-greenColor' />
                     <span className='text-sm text-blackColor max-[540px]:text-xs'>
                         <NumbersText lang='ar' number={100} className='!text-lg max-[540px]:text-base' />% {t('callToAction.note')}
                     </span>
-                </div>
+                </div> */}
+
+                <ListText
+                    icon={GoDotFill} text={<><NumbersText lang='ar' number={100} className='!text-lg max-[540px]:text-base'/>% {t('callToAction.note')}</>}
+                    className='px-5 py-1 bg-blackColor/5 rounded-full' iconStyle='!text-base' textStyle='!text-sm max-[540px]:text-xs'
+                />
 
             </div>
 

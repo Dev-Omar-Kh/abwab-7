@@ -3,6 +3,7 @@ import VideoCard from '@/components/cards/VideoCard';
 import MainTitle from '@/components/texts/MainTitle';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { useTranslation } from 'react-i18next';
+import ListText from '@/components/texts/ListText';
 
 const projectIdeaData = [
 
@@ -34,10 +35,10 @@ export default function ProjectIdea() {
 
                         <h3 className='text-2xl font-semibold text-greenColor max-[650px]:text-xl'>{t(idea.title)}</h3>
 
-                        <div className='space-x-2.5'>
-                            <IoMdCheckmarkCircleOutline className='shrink-0 inline-block text-xl text-greenColor max-[650px]:text-lg' />
-                            <span className='text-lg text-blackColor max-[650px]:text-base'>{t(idea.desc)}</span>
-                        </div>
+                        <ListText 
+                            icon={IoMdCheckmarkCircleOutline} text={idea.desc} 
+                            iconStyle='text-sm max-[650px]:text-lg' textStyle='max-[650px]:text-base'
+                        />
 
                     </div>)}
 

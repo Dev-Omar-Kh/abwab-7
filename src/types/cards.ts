@@ -4,6 +4,6 @@ export type RegularCardProps = {
     id?: number;
     icon: IconType;
     title: string;
-    description: string;
+    description?    : string;
     className?: string;
 }
