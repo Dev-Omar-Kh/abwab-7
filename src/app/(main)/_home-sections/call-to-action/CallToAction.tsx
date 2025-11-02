@@ -19,7 +19,7 @@ export default function CallToAction() {
 
     return <React.Fragment>
 
-        <section className='w-full light-pattern-bg shapedividers_com-8085'>
+        <section className='w-full light-pattern-bg shapedividers_com-393'>
 
             <div className='w-full py-20 common-px flex flex-col items-center justify-center gap-10 bg-lightColor/80'>
 

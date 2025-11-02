@@ -16,7 +16,7 @@ export default function AboutUsCTA() {
     const { t } = useTranslation();
 
     return <React.Fragment>
-    <section className='w-full light-pattern-bg shapedividers_com-8085'>
+    <section className='w-full light-pattern-bg shapedividers_com-393'>
         <div className='py-20 common-px space-y-10 bg-lightColor/80'>
 
             <div className='w-full flex flex-col items-center justify-center gap-7.5 !mb-20'>
