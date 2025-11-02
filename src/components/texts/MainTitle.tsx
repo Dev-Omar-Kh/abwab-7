@@ -19,7 +19,7 @@ export default function MainTitle({ title, textColor = 'var(--blackColor)', line
 
         <div className="relative inline-block">
 
-            <h2 className="relative px-7.5 text-center text-4xl font-semibold text-blackColor z-10 max-[375px]:text-3xl" style={{color: textColor}}>{t(title)}</h2>
+            <h2 className="relative px-7.5 text-center text-4xl font-semibold text-blackColor z-10 max-[375px]:text-2xl" style={{color: textColor}}>{t(title)}</h2>
 
             <svg
                 className={`absolute start-0 ${miniBottom ? '-bottom-5' : '-bottom-6'} w-full h-4 z-0`}
