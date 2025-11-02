@@ -22,7 +22,7 @@ const linksData: LinksData[] = [
     {id: 3, icon: MdOutlineOndemandVideo, title: 'header.links.videos', href: '/videos'},
     {id: 4, icon: LuHandHeart, title: 'header.links.recommendations', href: '/recommendations'},
     {id: 5, icon: LuClipboardList, title: 'header.links.reports', href: '/reports'},
-    {id: 6, icon: LuHeadset, title: 'header.links.contactUs', href: 'contact-us'},
+    {id: 6, icon: LuHeadset, title: 'header.links.contactUs', href: '/contact-us'},
 
 ];
 
