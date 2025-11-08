@@ -3,8 +3,19 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import RegularBtn from '@/components/buttons/RegularBtn';
-import RegularInput from '@/components/inputs/RegularInput';
-import TextareaInput from '@/components/inputs/TextareaInput';
+import dynamic from 'next/dynamic';
+// import RegularInput from '@/components/inputs/RegularInput';
+// import TextareaInput from '@/components/inputs/TextareaInput';
+
+const RegularInput = dynamic(() => import('@/components/inputs/RegularInput'), {
+    ssr: false,
+    loading: () => <div className="h-19 bg-whiteColor border-greenColor/25 animate-pulse rounded-lg"></div>
+});
+
+const TextareaInput = dynamic(() => import('@/components/inputs/TextareaInput'), {
+    ssr: false,
+    loading: () => <div className="h-37 bg-whiteColor border-greenColor/25 animate-pulse rounded-lg"></div>
+});
 
 export default function ContactForm({className}: {className?: string}) {
 
@@ -16,7 +27,7 @@ export default function ContactForm({className}: {className?: string}) {
 
     return <React.Fragment>
 
-        <div className={`p-5 space-y-5 rounded-xl light-pattern-bg bg-lightColor/75 ${className}`}>
+        <div className={`w-full min-h-125 p-5 space-y-5 rounded-xl light-pattern-bg bg-lightColor/75 ${className}`}>
 
             <h3 className='text-2xl font-semibold text-greenColor max-[550px]:text-xl'>{t('contactUs.form.title')}</h3>
 

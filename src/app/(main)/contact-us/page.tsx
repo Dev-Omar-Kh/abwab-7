@@ -2,14 +2,14 @@
 
 import React from 'react';
 import PageTitle from '@/components/page-title/PageTitle';
-import dynamic from 'next/dynamic';
+import SocialLinks from './_contact-us-sections/SocialLinks';
+import ContactForm from './_contact-us-sections/ContactForm';
 
 import titleBg from '@/assets/images/idea-bg.jpg';
-import SocialLinks from './_contact-us-sections/SocialLinks';
 
-const ContactForm = dynamic(() => import('./_contact-us-sections/ContactForm'), {
-    ssr: false
-});
+// const ContactForm = dynamic(() => import('./_contact-us-sections/ContactForm'), {
+//     ssr: false
+// });
 
 export default function ContactUs() {
 
