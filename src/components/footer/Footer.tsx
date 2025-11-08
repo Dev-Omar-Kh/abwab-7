@@ -19,7 +19,11 @@ const linksData: LinksData[] = [
     {id: 5, title: 'header.links.reports', href: '/reports'},
 ];
 
-const achievementsYears = [2023, 2024, 2025];
+const achievementsYears = [
+    {year: 2023, url: 'https://drive.google.com/drive/folders/18bT_mlwB5u3oTFqg7wLYwKGnRaLbEgYO?usp=drive_link'},
+    {year: 2023, url: 'https://drive.google.com/drive/folders/1Pg8YE-6MRjFSAdldZPiSYZd_x0KggcHZ?usp=drive_link'},
+    {year: 2023, url: 'https://drive.google.com/drive/folders/1R1xLxWvrY1NE48QDI3LOqN4tIYkwmW33?usp=drive_link'},
+];
 
 const socialLinks: SocialLinks[]  = [
     {id: 1, icon: FaFacebookF, href: 'https://www.facebook.com/AbwabSaba'},
@@ -75,8 +79,8 @@ export default function Footer() {
                         <ul className="flex flex-col gap-2 text-lightColor/75">
 
                             {achievementsYears.map((year, idx) => <li key={idx}>
-                                <Link href="#" className="hover:text-lightColor duration-300">
-                                    {t('footer.achievements.yearReport')} <NumbersText lang="ar" number={year} withSeparator={false} />
+                                <Link href={year.url} target="_blank" className="hover:text-lightColor duration-300">
+                                    {t('footer.achievements.yearReport')} <NumbersText lang="ar" number={year.year} withSeparator={false} />
                                 </Link>
                             </li>)}
 

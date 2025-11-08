@@ -267,13 +267,78 @@
 
     "reports": {
 
-        "title": "التقاريــر الشهريــة"
+        "title": "التقاريــر الشهريــة",
+
+        "reportTypes": {
+
+            "masharee3Insania": "مشاريع إنسانية",
+            "masharee3Da3awea": "مشاريع دعوية",
+            "masharee3Tanmawea": "مشاريع تنموية"
+
+        }
+
+    },
+
+    "months": {
+
+        "janMonth": "شـهـر يـنـايـر",
+        "febMonth": "شـهـر فـبـرايـر",
+        "marMonth": "شـهـر مـارس",
+        "aprMonth": "شـهـر أبـريـل",
+        "mayMonth": "شـهـر مـايـو",
+        "junMonth": "شـهـر يـونـيـو",
+        "julMonth": "شـهـر يـولـيـو",
+        "augMonth": "شـهـر أغـسـطـس",
+        "sepMonth": "شـهـر سـبـتـمـبـر",
+        "octMonth": "شـهـر أكـتـوبـر",
+        "novMonth": "شـهـر نـوفـمـبـر",
+        "decMonth": "شـهـر ديـسـمـبـر"
 
     },
 
     "contactUs": {
 
-        "title": "تواصــل معنــا"
+        "title": "تواصــل معنــا",
+
+        "form": {
+
+            "title": "أرسل رسالة لنتواصل معك!",
+
+            "nameField": {
+                "label": "الإســم",
+                "placeholder": "أدخل إسمك الكامل"
+            },
+
+            "phoneField": {
+                "label": "رقم الهاتف",
+                "placeholder": "أدخل رقم هاتف متاح للتواصل "
+            },
+
+            "descriptionField": {
+                "label": "الـرسـالـة",
+                "placeholder": "أدخل محتوى الرسالة "
+            },
+
+            "submit": "إرسـال"
+
+        },
+
+        "socialLinks": {
+
+            "title": "أو تواصل معنا عبر وسائل التواصل",
+
+            "phoneNum": "هـاتـف",
+            "whatsappNum": "واتـسـاب",
+            "whatsappChannel": "قناة الواتساب",
+            "facebook": "الفيسبوك",
+            "x": "إكـس ( تويتر )",
+            "youtube": "اليوتيوب",
+            "telegram": "التليجرام",
+            "site": "موقع المنظمة",
+            "projectName": "مشروع الأبواب السبعة",
+            "organizationName": "منظمة بسمة أمل"
+
+        }
 
     }
 

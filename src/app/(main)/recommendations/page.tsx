@@ -44,10 +44,13 @@ export default function RecommendationsPage() {
 
                 <div className='pb-20 grid grid-cols-2 gap-5 max-[850px]:grid-cols-1'>
 
-                    {recommendationsData.map(vid => <div key={vid.id} className='p-2.5 rounded-xl space-y-2.5 border border-blackColor/15 bg-whiteColor'>
+                    {recommendationsData.map(vid => <div 
+                        key={vid.id} 
+                        className='rounded-2xl border border-greenColor/25 bg-whiteColor shadow-sm max-[850px]:space-y-2.5'
+                    >
 
-                        <VideoCard src={vid.src} playing={playingId === vid.id} onPlay={() => setPlayingId(vid.id)} className='!rounded-md' />
-                        <h3 className='text-xl font-bold text-blackColor/80 max-[600px]:text-lg'>{t(vid.title)}</h3>
+                        <VideoCard src={vid.src} playing={playingId === vid.id} onPlay={() => setPlayingId(vid.id)} className='rounded-b-none' />
+                        <h3 className='p-5 text-xl font-bold text-blackColor/80 max-[600px]:text-lg'>{t(vid.title)}</h3>
 
                     </div>)}
 

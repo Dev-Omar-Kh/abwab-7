@@ -13,7 +13,7 @@ export default function ImageCard({src, alt, className = ''}: ImageCardProps) {
 
         <Image 
             src={src} alt={alt} 
-            className={`w-full aspect-video object-cover bg-blackColor/40 ${className}`} 
+            className={`w-full aspect-video object-cover bg-blackColor/40 rounded-md ${className}`} 
         />
 
     </React.Fragment>
