@@ -1,7 +1,6 @@
 import React from 'react';
-import type { ErrorFieldProps } from '../../types/propsTypes'
 
-export default function ErrorField({ error }: ErrorFieldProps) {
+export default function ErrorField({ error }: {error: string}) {
 
     return <React.Fragment>
 
