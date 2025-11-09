@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         description: "مشروع الأبواب السبعة للصدقة الجارية — مشروع العمر الذي يجمع بين الأجر المستمر وأثر الخير الباقي. خير ساقه الله إليك، فلا تحرم نفسك المشاركة.",
         images: [
             {
-                url: "/src/app/icon.png",
+                url: "/og-image.png",
                 alt: "الأبواب السبعة",
             },
         ],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "الأبواب السبعة",
         description: "مشروع الأبواب السبعة للصدقة الجارية — مشروع العمر الذي يجمع بين الأجر المستمر وأثر الخير الباقي. خير ساقه الله إليك، فلا تحرم نفسك المشاركة.",
-        images: ["/src/app/icon.png"],
+        images: ["/og-image.png"],
     },
 
 };
