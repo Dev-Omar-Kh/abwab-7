@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LoadingInput from './LoadingInput';
-import ErrorField from './ErrorField';
 import Label from './Label';
 
 // Animation variants
@@ -72,9 +71,9 @@ export default function TextareaInput({
 
     return <React.Fragment>
 
-        <div className={`relative flex flex-col gap-0.5 group ${className}`}>
+        <div className={`relative flex flex-col gap-1 group ${className}`}>
 
-            <Label id={id} label={label} description={description} />
+            <Label id={id} label={label} description={description} error={error} />
 
             <textarea 
                 id={id}
@@ -117,7 +116,7 @@ export default function TextareaInput({
 
         </div>
 
-        {error && <ErrorField error={error} />}
+        {/* {error && <ErrorField error={error} />} */}
 
     </React.Fragment>
 

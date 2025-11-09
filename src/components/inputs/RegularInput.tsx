@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { VscEye, VscEyeClosed } from 'react-icons/vsc';
 import LoadingInput from './LoadingInput';
-import ErrorField from '@/components/inputs/ErrorField';
 import Label from '@/components/inputs/Label';
 
 // Animation variants
@@ -80,9 +79,9 @@ export default function RegularInput({
 
     return<React.Fragment>
 
-        <div className={`relative flex flex-col gap-0.5 group ${className}`}>
+        <div className={`relative flex flex-col gap-1 group ${className}`}>
 
-            <Label id={id} label={label} description={description} />
+            <Label id={id} label={label} description={description} error={error} />
 
             <input 
                 id={id}
@@ -163,7 +162,7 @@ export default function RegularInput({
             )}
         </div>
 
-        {error && <ErrorField error={error} />}
+        {/* {error && <ErrorField error={error} />} */}
 
     </React.Fragment>
 

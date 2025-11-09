@@ -5,10 +5,11 @@ import { useTranslation } from 'react-i18next'
 import RegularBtn from '@/components/buttons/RegularBtn';
 import { RegularBtnProps } from '@/types/buttons';
 import { LuClipboardList, LuHandshake } from 'react-icons/lu';
+import Link from 'next/link';
 
 const ctaBtns: RegularBtnProps[] = [
-    {id: 1, icon: LuHandshake, title: 'callToAction.cta.contribute', variants: 'primary'},
-    {id: 2, icon: LuClipboardList, title: 'callToAction.cta.reports', variants: 'secondary'},
+    {id: 1, icon: LuHandshake, title: 'callToAction.cta.contribute', variants: 'primary', url: 'https://api.whatsapp.com/send/?phone=201069418701&text&type=phone_number&app_absent=0'},
+    {id: 2, icon: LuClipboardList, title: 'callToAction.cta.reports', variants: 'secondary', url: '/reports'},
 ];
 
 export default function AboutUsCTA() {
@@ -17,6 +18,7 @@ export default function AboutUsCTA() {
 
     return <React.Fragment>
     <section className='w-full light-pattern-bg shapedividers_com-393'>
+
         <div className='py-20 common-px space-y-10 bg-lightColor/80'>
 
             <div className='w-full flex flex-col items-center justify-center gap-7.5 !mb-20'>
@@ -47,15 +49,16 @@ export default function AboutUsCTA() {
                     '
                 >
 
-                    {ctaBtns.map(btn => <button key={btn.id}>
+                    {ctaBtns.map(btn => <Link href={btn.url ?? ''} target='_blank' key={btn.id}>
                         <RegularBtn title={btn.title} icon={btn.icon} variants={btn.variants} className='shadow-md'  />
-                    </button>)}
+                    </Link>)}
 
                 </div>
 
             </div>
 
         </div>
+
     </section>
     </React.Fragment>
 

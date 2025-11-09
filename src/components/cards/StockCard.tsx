@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import RegularBtn from '../buttons/RegularBtn';
 import NumbersText from '../texts/NumbersText';
+import Link from 'next/link';
 
 type StockCardProps = {
     price: number;
@@ -27,9 +28,9 @@ export default function StockCard({price, currency, className}: StockCardProps) 
 
             <div className="my-5 border-t border-dashed border-blackColor/15" />
 
-            <button className='w-full'>
+            <Link href={'https://api.whatsapp.com/send/?phone=201069418701&text&type=phone_number&app_absent=0'} target='_blank' className='w-full'>
                 <RegularBtn title='stocks.subscribe' variants='primary' />
-            </button>
+            </Link>
 
         </div>
 

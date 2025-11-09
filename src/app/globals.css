@@ -7,6 +7,7 @@
   --lightColor: #e9f5db;
   --greenColor: #219724;
   --blackColor: #132a13;
+  --redColor: #FF0000;
 }
 
 @theme inline {
@@ -16,6 +17,7 @@
   --color-greenColor: var(--greenColor);
   --color-blackColor: var(--blackColor);
   --color-whiteColor: var(--whiteColor);
+  --color-redColor: var(--redColor);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -398,6 +400,53 @@ body {
 @media (min-width:2100px) {
   .shapedividers_com-393::after {
     background-size: 150% calc(2vw + 40px);
+  }
+}
+
+/* ====== */
+
+.shapedividers_com-6721 {
+  overflow: hidden;
+  position: relative;
+}
+
+.shapedividers_com-6721::before {
+  content: '';
+  font-family: 'shape divider from ShapeDividers.com';
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 140% 30px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="%23ffffff"><path d="M907 83c-55 6-97-5-109-8-44-12-44-24-101-43-36-13-63-22-97-21-46 2-81 21-100 33-19-12-54-31-100-33-34-1-61 8-97 21-57 20-57 31-101 43-12 3-54 14-109 8A306 306 0 010 59v43h1000V59a306 306 0 01-93 24z"/><path d="M50 64s76 32 155-2c0 0-65 21-155 2z" opacity=".5"/><path d="M80 56s47 20 95-1c0 0-40 13-95 1z" opacity=".3"/><path d="M801 64s76 32 155-2c0 0-65 21-155 2z" opacity=".5"/><path d="M831 56s47 20 95-1c0 0-40 13-95 1z" opacity=".3"/></g></svg>');
+}
+
+@media (min-width:768px) {
+  .shapedividers_com-6721::before {
+    background-size: 100% 40px;
+    background-position: 50% 100%;
+  }
+}
+
+@media (min-width:1025px) {
+  .shapedividers_com-6721::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 60px;
+    background-position: 50% 100%;
+  }
+}
+
+@media (min-width:2100px) {
+  .shapedividers_com-6721::before {
+    background-size: 100% calc(2vw + 60px);
   }
 }
 

@@ -7,10 +7,11 @@ import RegularBtn from '@/components/buttons/RegularBtn';
 import { GoDotFill } from 'react-icons/go';
 import NumbersText from '@/components/texts/NumbersText';
 import ListText from '@/components/texts/ListText';
+import Link from 'next/link';
 
 const ctaBtns: RegularBtnProps[] = [
-    {id: 1, icon: LuHandshake, title: 'callToAction.cta.contribute', variants: 'primary'},
-    {id: 2, icon: LuClipboardList, title: 'callToAction.cta.reports', variants: 'secondary'},
+    {id: 1, icon: LuHandshake, title: 'callToAction.cta.contribute', variants: 'primary', url: 'https://api.whatsapp.com/send/?phone=201069418701&text&type=phone_number&app_absent=0'},
+    {id: 2, icon: LuClipboardList, title: 'callToAction.cta.reports', variants: 'secondary', url: '/reports'},
 ];
 
 export default function CallToAction() {
@@ -43,9 +44,9 @@ export default function CallToAction() {
                     '
                 >
 
-                    {ctaBtns.map(btn => <button key={btn.id}>
+                    {ctaBtns.map(btn => <Link href={btn.url ?? ''} target='_blank' key={btn.id}>
                         <RegularBtn title={btn.title} icon={btn.icon} variants={btn.variants} className='shadow-md'  />
-                    </button>)}
+                    </Link>)}
 
                 </div>
 

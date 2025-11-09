@@ -319,7 +319,15 @@
                 "placeholder": "أدخل محتوى الرسالة "
             },
 
-            "submit": "إرسـال"
+            "submit": "إرسـال",
+
+            "validations": {
+                "required": "الحقل مطلوب",
+                "minName": "الحد الأدنى حرفين",
+                "phoneInvalid": "رقم الهاتف غير صالح",
+                "minMessage": "الحد الأدنى ١٠ حروف",
+                "maxMessage": "الحد الأقصى ٢٥٠ حرف"
+            }
 
         },
 
