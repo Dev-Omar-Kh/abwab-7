@@ -26,7 +26,7 @@ export const metadata: Metadata = {
                 alt: "الأبواب السبعة",
             },
         ],
-        locale: "ar_SA",
+        locale: "ar_EG",
         type: "website",
     },
 
